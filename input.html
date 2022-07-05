@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>연봉 평균 예측</h2>
+<form method = 'post' action="main/result">
+    1.성별: <select name ='gender'>
+        <option value="0">남성</option>
+        <option value="1">여성</option>
+</select><br>
+    2.주거지 : <select name ='region'>
+        <option value="0">서울</option>
+        <option value="1">경기</option>
+        <option value="2">경남</option>
+        <option value="3">경북</option>
+        <option value="4">충남</option>
+        <option value="5">강원&충북</option>
+        <option value="6">전라&제주</option>
+</select><br>
+    3.학력 : <select name ='education'>
+        <option value="0">교육 없음(7세 미만)</option>
+        <option value="1">교육 없음(7세 이상)</option>
+        <option value="2">초등학교</option>
+        <option value="3">중학교</option>
+        <option value="4">고등학교</option>
+        <option value="5">전문대</option>
+        <option value="6">대학</option>
+        <option value="7">석사</option>
+        <option value="8">박사</option>
+
+    </select><br/>
+    4.결혼여부 : <select name ='marriage'>
+        <option value="0">해당 사항 없음(18세 미만)</option>
+        <option value="1">기혼</option>
+        <option value="2">사망으로 별거</option>
+        <option value="3">별거</option>
+        <option value="4">아직 미혼</option>
+        <option value="5">기타</option>
+    </select><br/>
+    5.출생연도 : <input type="text" name="year_born"><br>
+    6.가족인원수(본인포함) : <input type="text" name="family_member"><br>
+    7.조사 년차(2005~2018,1~15) : <input type="text" name="wave"><br>
+    8.종교 있음 1),없음2): <input type="text" name="religion"><br>
+    9.회사규모(1~10) *미취직 0 : <input type="text" name="company_size"><br>
+    10연봉(만원) : <input type="text" name="income"><br>
+    11.직업 없는사유: <input type="text" name="reason_none_worker"><br>0) 직장있음 1) 능력 없음 2) 병역 중 3) 학교 공부<br>
+4) 학교 준비 5) 취업 준비 6) 가사도우미 7) 집에서 아이 돌보기 <br>
+8) 간호 9) 경제 활동 포기 10) 아니오 일할 의향 11) 기타 <br>
+    <input type="submit" value="확인">
+</form>
+</body>
+</html>
